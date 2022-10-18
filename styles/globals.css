@@ -1,0 +1,52 @@
+/*TAILWIND IMPORT*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONTS */
+
+
+
+/*CSS DOCUMENT*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.btn-primary {
+  @apply text-white px-[30px] py-[8px]
+   rounded-3xl 
+   bg-primary 
+   cursor-pointer
+   hover:opacity-70
+   transition-all
+}
+
+.searchSettings {
+  @apply fixed 
+  z-50 
+  top-0
+  left-0
+  w-screen 
+  h-screen 
+  after:content-[''] 
+  after:w-screen 
+  after:h-screen 
+  after:absolute 
+  after:top-0
+  after:left-0
+  after:opacity-70
+  transition-all
+  grid
+  place-content-center
+}
+
+
